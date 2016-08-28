@@ -16,11 +16,40 @@ page '/*.txt', layout: false
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
-# General configuration
-
 ###
 # Helpers
 ###
+
+activate :blog do |blog|
+  # This will add a prefix to all links, template references and source paths
+  # blog.prefix = "blog"
+
+  blog.permalink = "{year}/{month}/{day}.html"
+  # Matcher for blog source files
+  blog.sources = "posts/{year}-{month}-{day}.html"
+  # blog.taglink = "tags/{tag}.html"
+  # blog.layout = "layout"
+  # blog.summary_separator = /(READMORE)/
+  # blog.summary_length = 250
+  # blog.year_link = "{year}.html"
+  # blog.month_link = "{year}/{month}.html"
+  # blog.day_link = "{year}/{month}/{day}.html"
+  # blog.default_extension = ".markdown"
+
+  blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
+
+  # Enable pagination
+  # blog.paginate = true
+  # blog.per_page = 10
+  # blog.page_link = "page/{num}"
+end
+
+page "/feed.xml", layout: false
+# Reload the browser automatically whenever files change
+# configure :development do
+#   activate :livereload
+# end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -36,4 +65,16 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
+
+  set :css_dir, '/my_cafe/stylesheets'
+  set :js_dir, '/my_cafe/javascripts'
+  set :images_dir, '/my_cafe/images'
+
+  set :base_url, 'my_cafe/'
+
+
+  after_build do
+    system 'rm -rf docs'
+    system 'mv build docs'
+  end
 end
