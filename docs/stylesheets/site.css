@@ -479,5 +479,7 @@ textarea,
 [hidden][aria-hidden="false"]:focus {
   clip: auto; }
 
-body {
-  background-color: #f5f5f5; }
+.index__image {
+  background: transparent url("/images/layouts/top.jpg") no-repeat scroll center center;
+  background-size: cover;
+  min-height: 960px; }

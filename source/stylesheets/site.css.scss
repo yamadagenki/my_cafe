@@ -1,6 +1,4 @@
 @import 'base/sanitize';
 @import 'base/site_settings';
 
-body {
-  background-color: $body_color;
-}
+@import 'limited/index'
