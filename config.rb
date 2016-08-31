@@ -66,9 +66,9 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 
-  set :css_dir, '/my_cafe/stylesheets'
-  set :js_dir, '/my_cafe/javascripts'
-  set :images_dir, '/my_cafe/images'
+  set :css_dir, 'my_cafe/stylesheets'
+  set :js_dir, 'my_cafe/javascripts'
+  set :images_dir, 'my_cafe/images'
 
   set :base_url, 'my_cafe/'
 
