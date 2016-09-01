@@ -1,4 +1,12 @@
 @import 'base/sanitize';
 @import 'base/site_settings';
+@import 'base/helper';
 
-@import 'limited/index'
+@import 'limited/index';
+@import 'limited/header';
+
+@import 'components/article';
+
+body {
+  background-color: #f5f5f5;
+}

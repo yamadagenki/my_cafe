@@ -479,7 +479,43 @@ textarea,
 [hidden][aria-hidden="false"]:focus {
   clip: auto; }
 
+.f-left {
+  float: left; }
+
+.f-right {
+  float: right; }
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+  font-size: 0.1em;
+  line-height: 0; }
+
+.content {
+  width: 960px;
+  margin: 0 auto; }
+
 .index__image {
   background: transparent url("/my_cafe/images/layouts/top.png") no-repeat scroll center center;
   background-size: cover;
   height: 500px; }
+
+header {
+  color: black;
+  height: 50px;
+  text-align: right;
+  padding-top: 15px;
+  padding-right: 100px; }
+
+.articles {
+  margin-top: 30px; }
+  .articles__article {
+    display: inline-block;
+    width: 300px;
+    margin: 20px; }
+
+body {
+  background-color: #f5f5f5; }
