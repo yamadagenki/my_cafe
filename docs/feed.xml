@@ -11,8 +11,8 @@
   </author>
   <entry>
     <title>サンプル</title>
-    <link rel="alternate" href="http://blog.url.com/2016/08/22.html"/>
-    <id>http://blog.url.com/2016/08/22.html</id>
+    <link rel="alternate" href="http://blog.url.com/my_cafe/2016/08/22.html"/>
+    <id>http://blog.url.com/my_cafe/2016/08/22.html</id>
     <published>2016-08-22T09:00:00+09:00</published>
     <updated>2016-08-29T09:30:56+09:00</updated>
     <author>
@@ -23,8 +23,8 @@
   </entry>
   <entry>
     <title>Example Article</title>
-    <link rel="alternate" href="http://blog.url.com/2012/01/01.html"/>
-    <id>http://blog.url.com/2012/01/01.html</id>
+    <link rel="alternate" href="http://blog.url.com/my_cafe/2012/01/01.html"/>
+    <id>http://blog.url.com/my_cafe/2012/01/01.html</id>
     <published>2012-01-01T09:00:00+09:00</published>
     <updated>2016-08-29T09:30:56+09:00</updated>
     <author>
